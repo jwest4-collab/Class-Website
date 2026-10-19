@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeromes First Website</title>
+    <title>Home | Jerome's Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <p>Jerome's Portfolio</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="projects.html">Projects/Work</a></li>
+                <li><a href="about.html">About/Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading">Welcome to my portfolio</h1>
+            <p>I'm Jerome, a student learning to create for the web. This site is a place to share what I'm working on and what I'm learning.</p>
+            <p><a href="projects.html">Explore my projects</a></p>
+        </section>
+
+        <section aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured work</h2>
+            <article>
+                <h3>My first project</h3>
+                <p>A short introduction to a project will go here. I can add what I made, what I learned, and what I might improve next.</p>
+                <a href="projects.html">See all projects</a>
+            </article>
+        </section>
+
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">A little about me</h2>
+            <p>I'm building my skills one project at a time. Visit the About page to learn more or get in touch.</p>
+            <p><a href="about.html">About and contact</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Jerome</p>
+    </footer>
 </body>
 </html>
