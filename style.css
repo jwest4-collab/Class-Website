@@ -1,0 +1,142 @@
+:root {
+	color-scheme: light;
+	--teal: #174b4a;
+	--coral: #e66b50;
+	--paper: #f5f7f2;
+	--ink: #243332;
+	--line: #cbd8d2;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--ink);
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	line-height: 1.65;
+}
+
+header {
+	padding: 1rem max(1.25rem, calc((100% - 58rem) / 2));
+	background: var(--teal);
+	border-bottom: 5px solid var(--coral);
+	color: white;
+}
+
+.site-title {
+	margin: 0 0 0.6rem;
+	font-family: Georgia, serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.4rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	color: #f9d7ca;
+	font-weight: bold;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.2em;
+}
+
+nav a[aria-current="page"] {
+	color: white;
+}
+
+main {
+	width: min(100% - 2rem, 58rem);
+	margin: 2.5rem auto;
+}
+
+section {
+	margin: 1.5rem 0;
+	padding: 1.5rem 1.75rem;
+	border: 1px solid var(--line);
+	border-left: 5px solid var(--teal);
+	background: white;
+}
+
+.intro {
+	padding: 2rem;
+	border-left-color: var(--coral);
+	background: #e5f0eb;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--teal);
+	font-family: Georgia, serif;
+	line-height: 1.2;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: clamp(2rem, 6vw, 3rem);
+}
+
+#welcome-heading {
+	max-width: 15ch;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+a {
+	color: #a83e2b;
+}
+
+a:hover {
+	color: var(--teal);
+}
+
+.button-link {
+	display: inline-block;
+	margin: 0.35rem 0.4rem 0.35rem 0;
+	padding: 0.55rem 0.9rem;
+	border: 2px solid var(--coral);
+	border-radius: 4px;
+	background: var(--coral);
+	color: #241d1a;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.button-link:hover {
+	border-color: var(--teal);
+	background: var(--teal);
+	color: white;
+}
+
+footer {
+	margin-top: 3rem;
+	padding: 1rem max(1.25rem, calc((100% - 58rem) / 2));
+	border-top: 1px solid var(--line);
+	background: #e5f0eb;
+}
+
+footer p {
+	margin: 0;
+}
+
+@media (max-width: 36rem) {
+	main {
+		margin: 1.5rem auto;
+	}
+
+	section,
+	.intro {
+		padding: 1.25rem;
+	}
+}
