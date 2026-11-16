@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <p class="site-title">Jerome's Portfolio</p>
         <nav aria-label="Main navigation">
@@ -18,7 +19,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" class="home-grid" tabindex="-1">
         <section class="intro" aria-labelledby="welcome-heading">
             <h1 id="welcome-heading">Welcome to my portfolio</h1>
             <p>I'm Jerome, a student learning how to build useful, welcoming websites. This portfolio is where I share my projects, practice, and progress.</p>
@@ -35,7 +36,7 @@
             </ul>
         </section>
 
-        <section aria-labelledby="approach-heading">
+        <section class="card-grid" aria-labelledby="approach-heading">
             <h2 id="approach-heading">How I approach a project</h2>
             <article>
                 <h3>Start with the purpose</h3>

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects/Work | Jerome's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-        <p>Jerome's Portfolio</p>
+        <p class="site-title">Jerome's Portfolio</p>
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,13 +19,13 @@
         </nav>
     </header>
 
-    <main>
-        <header>
+    <main id="main-content" class="page-content" tabindex="-1">
+        <header class="page-heading">
             <h1>Projects and work</h1>
             <p>A collection of class assignments, experiments, and things I've made.</p>
         </header>
 
-        <section aria-labelledby="class-projects-heading">
+        <section class="card-grid" aria-labelledby="class-projects-heading">
             <h2 id="class-projects-heading">Class projects</h2>
             <article>
                 <h3>Project one: [project name]</h3>
@@ -35,7 +37,7 @@
             </article>
         </section>
 
-        <section aria-labelledby="experiments-heading">
+        <section class="card-grid" aria-labelledby="experiments-heading">
             <h2 id="experiments-heading">Experiments</h2>
             <article>
                 <h3>[Experiment or work in progress]</h3>
