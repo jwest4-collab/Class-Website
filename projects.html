@@ -45,11 +45,26 @@
                 <p>[Share an idea you're exploring or a skill you're practicing.]</p>
             </article>
         </section>
+
+        <section aria-labelledby="ideas-heading">
+            <h2 id="ideas-heading">Project ideas</h2>
+            <p>Add ideas you might want to explore. Your list stays on this page and is not saved.</p>
+            <form id="idea-form" class="idea-form" novalidate>
+                <label for="idea-input">A project idea</label>
+                <input id="idea-input" class="idea-input" type="text" autocomplete="off" aria-describedby="idea-hint idea-error">
+                <small id="idea-hint">Typing here highlights the field. Press Enter or choose Add idea.</small>
+                <p id="idea-error" class="field-error" role="status" aria-live="polite"></p>
+                <button id="add-idea" class="button-link" type="submit">Add idea</button>
+            </form>
+            <p id="idea-empty">No ideas added yet.</p>
+            <ul id="idea-list" class="idea-list" aria-label="Your project ideas" aria-live="polite" aria-relevant="additions removals"></ul>
+        </section>
     </main>
 
     <footer>
         <p>&copy; Jerome</p>
     </footer>
     <script src="nav-interactions.js" defer></script>
+    <script src="projects-interactions.js" defer></script>
 </body>
 </html>
